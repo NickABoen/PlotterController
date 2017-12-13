@@ -1,3 +1,4 @@
+# Build system files
 _*/
 *.vim
 compile_commands.json
