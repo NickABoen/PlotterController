@@ -41,9 +41,19 @@ message( STATUS "...End")
 #target_link_libraries(plotter
 #    PUBLIC ${SDL2PP_LIBRARIES}
 #    )
+
 target_link_libraries(plotter
     PUBLIC steppers
     )
+
+find_library(lib_wiringPi wiringPi)
+
+if(lib_wiringPi)
+    add_definitions(-DHAS_WIRING_PI)
+    target_link_libraries(plotter
+        PUBLIC lib_wiringPi
+        )
+endif()
 
 # Add compile features
 target_compile_features(plotter
