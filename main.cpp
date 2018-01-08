@@ -18,6 +18,12 @@ void print_motor_state(const motor_state<PinCount>& state)
 int main(){
     std::cout << "Hello World - Motor States" << std::endl;
 
+#ifdef HAS_WIRING_PI
+    std::cout << "Wiring Pi found" << std::endl;
+#else
+    std::cout << "Wiring Pi not found" << std::endl;
+#endif
+
     //sequence_instance<3,3> stepper(bipolar_average_motor);
     motor_sequence<3,3> test
     {{
