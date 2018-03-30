@@ -5,6 +5,8 @@
  *  Stepper motor library for interfacing between software and a physical motor
  */
 
+#include "../wiringPiContext.hpp"
+
 #include "../i_wiringPi.hpp"
 #include "../cyclic_iterator/cyclic_iterator.hpp"
 #include <array>

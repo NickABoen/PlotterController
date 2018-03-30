@@ -9,8 +9,11 @@ add_subdirectory(./steppers)
 
 # Add targets
 add_executable(plotter
-    main.cpp
+    test_main.cpp
     i_wiringPi.cpp
+    wiringPiContext.cpp
+    stepper.cpp
+    stepper_coil.cpp
     )
 
 message( STATUS "Start...")
