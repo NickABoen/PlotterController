@@ -2,7 +2,7 @@
 #include "wiringPiContext.hpp"
 
 #ifdef HAS_WIRING_PI
-#include "i_wiringPi.h"
+#include "wiringPi.h"
 #endif
 
 namespace plotter{
