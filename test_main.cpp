@@ -31,7 +31,7 @@ int main(){
 
     std::unique_ptr<plotter::stepper_coil> coil = 
         std::make_unique<plotter::stepper_coil>(context,
-            pin_list({1,2,3,4}),
+            pin_list({0,2,3,12}),
             coil_state_list({{0,0,0,0},{0,1,0,1},{1,0,1,0}})
         );
 
